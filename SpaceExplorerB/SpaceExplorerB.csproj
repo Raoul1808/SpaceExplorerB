@@ -10,4 +10,10 @@
       <ProjectReference Include="..\Brocco\FNA\FNA.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="Content\**\*.*">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
