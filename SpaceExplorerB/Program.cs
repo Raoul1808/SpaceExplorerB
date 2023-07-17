@@ -1,7 +1,7 @@
 ﻿using Brocco;
+using Brocco.Basic;
 using Microsoft.Xna.Framework;
 using SpaceExplorerB.Scenes;
-using Size = System.Drawing.Size;
 
 namespace SpaceExplorerB;
 
