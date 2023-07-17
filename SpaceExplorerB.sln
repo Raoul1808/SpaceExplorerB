@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceExplorerB", "SpaceExplorerB\SpaceExplorerB.csproj", "{F9B2B569-81B7-4332-AF9A-1B8F2E71A599}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brocco", "Brocco\Brocco\Brocco.csproj", "{1AA522B3-8FA9-435D-B6B3-2DBD367C65DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNA.Core", "Brocco\FNA\FNA.Core.csproj", "{348AF959-46D0-4462-8C2D-7AD834CEDC2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{F9B2B569-81B7-4332-AF9A-1B8F2E71A599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B2B569-81B7-4332-AF9A-1B8F2E71A599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B2B569-81B7-4332-AF9A-1B8F2E71A599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA522B3-8FA9-435D-B6B3-2DBD367C65DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA522B3-8FA9-435D-B6B3-2DBD367C65DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA522B3-8FA9-435D-B6B3-2DBD367C65DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA522B3-8FA9-435D-B6B3-2DBD367C65DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348AF959-46D0-4462-8C2D-7AD834CEDC2A}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{348AF959-46D0-4462-8C2D-7AD834CEDC2A}.Debug|Any CPU.Build.0 = Debug|x64
+		{348AF959-46D0-4462-8C2D-7AD834CEDC2A}.Release|Any CPU.ActiveCfg = Release|x64
+		{348AF959-46D0-4462-8C2D-7AD834CEDC2A}.Release|Any CPU.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal

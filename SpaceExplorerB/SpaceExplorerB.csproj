@@ -5,4 +5,9 @@
         <TargetFramework>net6.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Brocco\Brocco\Brocco.csproj" />
+      <ProjectReference Include="..\Brocco\FNA\FNA.Core.csproj" />
+    </ItemGroup>
+
 </Project>
