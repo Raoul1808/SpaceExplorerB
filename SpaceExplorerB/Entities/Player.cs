@@ -13,7 +13,7 @@ public class Player : Entity
         Position = Vector2.One * 25;
     }
     
-    public override void Update()
+    public override void Update(float dt)
     {
         var vel = Vector2.Zero;
         const float moveSpeed = 2.5f;

@@ -8,7 +8,7 @@ public class GameScene : Scene
 {
     public override void Load()
     {
-        var p = AddToScene(new Player());
+        var p = AddToScene<Player>();
         Console.WriteLine("Added player with ID: " + p.Id);
     }
 }
