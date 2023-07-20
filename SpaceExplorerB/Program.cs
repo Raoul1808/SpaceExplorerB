@@ -15,6 +15,9 @@ internal class Program
             ClearColor = Color.Black,
         });
         
+        Assets.PreloadFont("Tiny Unicode", new [] {"TinyUnicode.ttf"});
+
+        SceneManager.Add("Menu Scene", new MenuScene());
         SceneManager.Add("Game Scene", new GameScene());
         
         game.Run();

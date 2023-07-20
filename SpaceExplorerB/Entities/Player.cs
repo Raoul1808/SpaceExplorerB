@@ -1,4 +1,3 @@
-using System;
 using Brocco;
 using Brocco.Input;
 using Microsoft.Xna.Framework;
