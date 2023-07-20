@@ -2,6 +2,7 @@ using System;
 using Brocco;
 using Brocco.Input;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 
 namespace SpaceExplorerB.Entities;
@@ -11,19 +12,20 @@ public class Player : Entity
     private const float Velocity = 100f;
     private const float BulletShootDelay = 1f / 6f;
     private const float BulletSpeed = 300f;
+
+    private SoundEffect _shootSound;
     
     private float _shootTimer;
     
     public Player()
     {
         CurrentTexture = Assets.GetTexture("PlayerShip");
+        _shootSound = Assets.GetSound("shoot1");
         Position = Vector2.One * 25;
     }
     
     public override void Update(float dt)
     {
-        Console.WriteLine(dt);
-        Console.WriteLine(_shootTimer);
         var vel = Vector2.Zero;
 
         if (InputManager.GetKeyDown(Keys.Left) || InputManager.GetButtonDown(Buttons.LeftThumbstickLeft))
@@ -56,5 +58,6 @@ public class Player : Entity
         var bullet = Scene.AddToScene<Bullet>();
         bullet.Position = bulletPos;
         bullet.Velocity = new Vector2(0f, -BulletSpeed);
+        _shootSound.Play();
     }
 }
