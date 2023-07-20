@@ -18,13 +18,13 @@ public class Player : Entity
         var vel = Vector2.Zero;
         const float moveSpeed = 2.5f;
 
-        if (InputManager.GetKeyDown(Keys.Left))
+        if (InputManager.GetKeyDown(Keys.Left) || InputManager.GetButtonDown(Buttons.LeftThumbstickLeft))
             vel.X--;
-        if (InputManager.GetKeyDown(Keys.Right))
+        if (InputManager.GetKeyDown(Keys.Right) || InputManager.GetButtonDown(Buttons.LeftThumbstickRight))
             vel.X++;
-        if (InputManager.GetKeyDown(Keys.Up))
+        if (InputManager.GetKeyDown(Keys.Up) || InputManager.GetButtonDown(Buttons.LeftThumbstickUp))
             vel.Y--;
-        if (InputManager.GetKeyDown(Keys.Down))
+        if (InputManager.GetKeyDown(Keys.Down) || InputManager.GetButtonDown(Buttons.LeftThumbstickDown))
             vel.Y++;
 
         if (vel != Vector2.Zero)
