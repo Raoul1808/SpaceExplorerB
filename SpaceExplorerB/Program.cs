@@ -12,7 +12,7 @@ internal class Program
         var game = new BroccoGame(new BroccoGameSettings
         {
             CanvasSize = new Size(256, 240),
-            ClearColor = Color.CornflowerBlue,
+            ClearColor = Color.Black,
         });
         
         SceneManager.Add("Game Scene", new GameScene());
